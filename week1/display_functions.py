@@ -18,6 +18,7 @@ df_txt = pd.read_csv(txt_file, sep='\t')
 
 # Check whether the data is loaded correctly
 print(df_csv.head())
+print('\n')
 print(df_txt.head())
 print(df_csv.shape)
 print(df_csv.columns)
@@ -115,12 +116,12 @@ plotHistogram(df_csv, nHistogramShown=10, nHistogramPerRow=5)
 #plotHistogram(df_txt, nHistogramShown=10, nHistogramPerRow=5)
 
 # Plot correlation matrix for CSV data
-plotCorrelationMatrix(df_csv, graphWidth=10)
+#plotCorrelationMatrix(df_csv, graphWidth=10)
 # Plot correlation matrix for TXT data
 #plotCorrelationMatrix(df_txt, graphWidth=10)
 
 # Plot scatter matrix for CSV data
-plotScatterMatrix(df_csv, plotSize=10, textSize=10)
+#plotScatterMatrix(df_csv, plotSize=10, textSize=10)
 # Plot scatter matrix for TXT data
 #plotScatterMatrix(df_txt, plotSize=10, textSize=10)
 
